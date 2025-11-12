@@ -131,10 +131,62 @@ header .navbar .nav-link:hover {
   max-width: 70%;
   margin: 24px 0 40px;
 }
-/* .hero-section .hero-details .button {
+.hero-section .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-section .hero-details .button {
   padding: 10px 26px;
   color: var(--primary-color);
-  border-radius: 2px solid transparent;
-} */
+  border-radius: var(--border-radius-m);
+  background: var(--secondary-color);
+  font-weight: var(--font-weight-medium);
+  border: 2px solid transparent;
+  transition: 0.3 ease;
+}
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us {
+  color: var(--white-color);
+  background: transparent;
+  border-color: var(--white-color);
+}
 
-/* Image */
+.hero-section .hero-details .contact-us:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.hero-section .hero-image-wrapper {
+  max-width: 500px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+  }
+  .navbar .nav-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+  .navbar .nav-menu .nav-link {
+    color: var(--dark-color);
+    font-size: var(--font-size-l);
+    display: block;
+    margin-top: 15px;
+  }
+}
