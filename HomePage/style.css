@@ -352,4 +352,21 @@ header .navbar .nav-link:hover {
     max-width: 250px;
     aspect-ratio: 1;
   }
+  .menu-section .menu-list {
+    gap: 30;
+  }
+  .menu-section .menu-list .menu-item {
+    width: calc(100% / 3 - 30px);
+  }
+  .menu-section .menu-list .menu-item .menu-image {
+    max-width: 200px;
+  }
+}
+@media screen and(max-width:640px) {
+  .menu-section .menu-list {
+    gap: 60;
+  }
+  .menu-section .menu-list .menu-item {
+    width: 100%;
+  }
 }
