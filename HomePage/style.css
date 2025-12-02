@@ -260,6 +260,19 @@ header .navbar .nav-link:hover {
 .menu-section .menu-list .menu-item .text {
   font-size: var(--font-size-m);
 }
+
+/* Testimonial section */
+.testimonials-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+
+.testimonials-section .testimonials .user-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 1024px) {
 }
 
