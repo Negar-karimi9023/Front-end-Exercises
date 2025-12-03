@@ -6,6 +6,10 @@
     <title>Document</title>
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./HomePage/style.css" />
@@ -159,10 +163,10 @@
       <section class="testimonials-section">
         <h2 class="section-title">Testimonials</h2>
         <div class="section-content">
-          <div class="slider-container">
+          <div class="slider-container swiper">
             <div class="slider-wrapper">
-              <ul class="testimonials-list">
-                <li class="testimonials">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
                   <img
                     src="/HomePage/images/user-1.jpg"
                     alt="user"
@@ -174,7 +178,7 @@
                     order again!!</i
                   >
                 </li>
-                <li class="testimonials">
+                <li class="testimonial swiper-slide">
                   <img
                     src="/HomePage/images/user-2.jpg"
                     alt="user"
@@ -186,7 +190,7 @@
                     order again!!</i
                   >
                 </li>
-                <li class="testimonials">
+                <li class="testimonial swiper-slide">
                   <img
                     src="/HomePage/images/user-3.jpg"
                     alt="user"
@@ -198,7 +202,7 @@
                     order again!!</i
                   >
                 </li>
-                <li class="testimonials">
+                <li class="testimonial swiper-slide">
                   <img
                     src="/HomePage/images/user-4.jpg"
                     alt="user"
@@ -210,7 +214,7 @@
                     order again!!</i
                   >
                 </li>
-                <li class="testimonials">
+                <li class="testimonial swiper-slide">
                   <img
                     src="/HomePage/images/user-5.jpg"
                     alt="user"
@@ -223,11 +227,18 @@
                   >
                 </li>
               </ul>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./HomePage/main.js"></script>
   </body>
 </html>

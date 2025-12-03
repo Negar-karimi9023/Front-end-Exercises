@@ -266,11 +266,43 @@ header .navbar .nav-link:hover {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
 }
+.testimonials-section .testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+}
 
-.testimonials-section .testimonials .user-image {
+.testimonials-section .testimonial .user-image {
   width: 180px;
   height: 180px;
   object-fit: cover;
+  border-radius: var(--border-radius-circle);
+  margin-bottom: 50px;
+}
+.testimonials-section .testimonial .name {
+  margin-bottom: 16px;
+  font-size: var(--font-size-m);
+}
+
+.testimonials-section .testimonial .feedback {
+  line-height: 25px;
+}
+
+.testimonials-section .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: var(--secondary-color);
+}
+
+.testimonials-section .swiper-slide-button {
+  color: var(--secondary-color);
+  transition: 0.3s ease;
+}
+.testimonials-section .swiper-slide-button:hover {
+  color: var(--primary-color-color);
 }
 
 @media screen and (max-width: 1024px) {
