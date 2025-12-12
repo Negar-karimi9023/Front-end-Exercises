@@ -18,6 +18,9 @@ html {
   scroll-padding-top: 6rem; /* فاصله برای نوار ثابت */
   overflow-x: hidden; /* جلوگیری از اسکرول افقی */
 }
+section {
+  padding: 2rem 9%;
+}
 header {
   position: fixed;
   left: 0;
@@ -67,6 +70,14 @@ header .fa-bars {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   display: none;
 }
+.home {
+  display: flex;
+  align-items: center;
+  background: url(/FlowerShop/images/banner.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
 @media (max-width: 991px) {
   html {
@@ -87,6 +98,10 @@ header .fa-bars {
     right: 0;
     background: #eee;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header #taggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   header .navbar a {
     margin: 1.5rem;
@@ -94,5 +109,10 @@ header .fa-bars {
     background: #fff;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: block;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
   }
 }
