@@ -177,7 +177,37 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   line-height: 1.5;
   text-align: justify;
 }
+.icons-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: #eee;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.icons-container .icons {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex: 1 1 25rem;
+  border-radius: 1rem;
+}
+.icons-container .icons img {
+  height: 5rem;
+  margin-right: 2rem;
+}
 
+.icons-container .icons h3 {
+  color: #333;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.icons-container .icons span {
+  color: #555;
+  font-size: 1.3rem;
+}
 @media (max-width: 1400px) {
   .home {
     background-position: left;
@@ -225,6 +255,13 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   }
   .home .content span {
     font-size: 2.5rem;
+  }
+
+  .icons-container .icons h3 {
+    font-size: 2rem;
+  }
+  .icons-container .icons span {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 450px) {
