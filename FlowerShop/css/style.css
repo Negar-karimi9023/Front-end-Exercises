@@ -208,6 +208,33 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   color: #555;
   font-size: 1.3rem;
 }
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.products .box-container .box {
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.products .box-container .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.7rem 1rem;
+  font-size: 2rem;
+  color: var(--pink);
+  background: rgb(255, 51, 153, 0.05);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+.products .box-container .box .image img {
+  /* width: 200px; */
+  height: 30rem;
+}
 @media (max-width: 1400px) {
   .home {
     background-position: left;
