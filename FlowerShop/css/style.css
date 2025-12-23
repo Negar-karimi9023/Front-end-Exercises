@@ -231,10 +231,47 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   z-index: 1;
   border-radius: 0.5rem;
 }
+.products .box-container .box .image {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
 .products .box-container .box .image img {
   /* width: 200px; */
-  height: 30rem;
+  height: 25rem;
 }
+.products .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.products .box-container .box .image .icons {
+  position: absolute;
+  bottom: -7rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  text-align: center;
+}
+.products .box-container .box:hover .image .icons {
+  bottom: 0;
+}
+.products .box-container .box .image .icons a {
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  width: 50%;
+  background: var(--pink);
+  color: white;
+}
+.products .box-container .box .image .icons .cart-btn {
+  border-left: 0.1rem solid #fff7;
+  border-right: 0.1rem solid #fff7;
+  width: 100%;
+}
+.products .box-container .box .image .icons a:hover {
+  background: #333;
+}
+
 @media (max-width: 1400px) {
   .home {
     background-position: left;
