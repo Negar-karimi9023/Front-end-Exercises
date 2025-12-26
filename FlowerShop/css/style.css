@@ -271,6 +271,26 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
 .products .box-container .box .image .icons a:hover {
   background: #333;
 }
+.products .box-container .box .content {
+  padding: 2rem;
+  text-align: center;
+}
+.products .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.products .box-container .box .content .price {
+  font-size: 2.5rem;
+  color: var(--pink);
+  font-weight: bolder;
+  padding-top: 1rem;
+}
+.products .box-container .box .content .price span {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
 
 @media (max-width: 1400px) {
   .home {
