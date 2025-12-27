@@ -291,6 +291,61 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   text-decoration: line-through;
   font-weight: lighter;
 }
+.review .box-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.review .box-container .box {
+  position: relative;
+  flex: 1 1 30rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  border: 0.1rem solid rgb(0, 0, 0, 0.1);
+}
+.review .box-container .box:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.review .box-container .box .fa-quote-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 6rem;
+  color: #eee;
+}
+.review .box-container .box .stars i {
+  color: var(--pink);
+  font-size: 2rem;
+}
+.review .box-container .box p {
+  color: #999;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 2rem;
+  text-align: justify;
+}
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+}
+.review .box-container .box .user img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.review .box-container .box .user h3 {
+  font-size: 2rem;
+  color: #333;
+}
+.review .box-container .box .user span {
+  font-size: 1.5rem;
+  color: #999;
+}
 
 @media (max-width: 1400px) {
   .home {
