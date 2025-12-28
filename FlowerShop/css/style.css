@@ -103,7 +103,7 @@ header .fa-bars {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  padding: 40rem 9%;
+  padding: 24rem 9%;
 }
 .home .content {
   max-width: 50rem;
@@ -214,7 +214,7 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   gap: 1.5rem;
 }
 .products .box-container .box {
-  flex: 1 1 30rem;
+  flex: 1 1 25rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
@@ -298,7 +298,7 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
 }
 .review .box-container .box {
   position: relative;
-  flex: 1 1 30rem;
+  flex: 1 1 25rem;
   box-shadow: 0 0.5rem 1.5rem rgb(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 3rem 2rem;
@@ -310,9 +310,9 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
 }
 .review .box-container .box .fa-quote-right {
   position: absolute;
-  bottom: 3rem;
-  right: 3rem;
-  font-size: 6rem;
+  bottom: 4.2rem;
+  right: 1rem;
+  font-size: 3rem;
   color: #eee;
 }
 .review .box-container .box .stars i {
@@ -339,12 +339,51 @@ flex-basis: 40rem; اندازه اولیه آیتم قبل از تقسیم فض�
   margin-right: 1rem;
 }
 .review .box-container .box .user h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #333;
 }
 .review .box-container .box .user span {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #999;
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.contact .row .image {
+  flex: 1 1 40rem;
+}
+.contact .row .image img {
+  width: 100%;
+  object-fit: cover;
+}
+.contact .row form .box {
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 0.7rem 0;
+  width: 100%;
+}
+.contact .row form .box:hover {
+  border-color: var(--pink);
+}
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
 }
 
 @media (max-width: 1400px) {
